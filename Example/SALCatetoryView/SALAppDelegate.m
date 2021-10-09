@@ -7,12 +7,17 @@
 //
 
 #import "SALAppDelegate.h"
+#import "SALViewController.h"
 
 @implementation SALAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
+    self.window.rootViewController = [SALViewController new];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

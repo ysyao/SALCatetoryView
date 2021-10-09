@@ -1,0 +1,16 @@
+PODS:
+  - SALCatetoryView (0.1.0)
+
+DEPENDENCIES:
+  - SALCatetoryView (from `../`)
+
+EXTERNAL SOURCES:
+  SALCatetoryView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SALCatetoryView: 936599dee6990a097c7f96513d42215482251af6
+
+PODFILE CHECKSUM: 13637a6553489f2d76455b6bc023d5beeae4a5df
+
+COCOAPODS: 1.9.0

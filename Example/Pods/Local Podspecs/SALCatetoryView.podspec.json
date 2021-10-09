@@ -1,0 +1,22 @@
+{
+  "name": "SALCatetoryView",
+  "version": "0.1.0",
+  "summary": "A short description of SALCatetoryView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jimmyandhurry@gmail.com/SALCatetoryView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jimmyandhurry@gmail.com": "391991063@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/jimmyandhurry@gmail.com/SALCatetoryView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "SALCatetoryView/Classes/**/*"
+}

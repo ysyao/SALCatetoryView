@@ -1,0 +1,6 @@
+framework module SALCatetoryView {
+  umbrella header "SALCatetoryView-umbrella.h"
+
+  export *
+  module * { export * }
+}

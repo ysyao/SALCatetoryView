@@ -7,23 +7,43 @@
 //
 
 #import "SALViewController.h"
+#import "SALCategoryView.h"
 
 @interface SALViewController ()
+
+@property(nonatomic, strong) SALCategoryView *categoryView;
 
 @end
 
 @implementation SALViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+- (SALCategoryView *)categoryView {
+    if (!_categoryView) {
+        _categoryView = [[SALCategoryView alloc] initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height)];
+    }
+    
+    return _categoryView;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self.view setBackgroundColor:UIColor.whiteColor];
+    
+    [self.view addSubview:self.categoryView];
+    
+    UIViewController *leVc = [UIViewController new];
+    leVc.view = [[UIView alloc] initWithFrame:CGRectZero];
+    [leVc.view setBackgroundColor:UIColor.orangeColor];
+    [self.categoryView addCategory:@"左边" withViewController:leVc color:UIColor.orangeColor];
+    
+    UIViewController *riVc = [UIViewController new];
+    riVc.view = [[UIView alloc] initWithFrame:CGRectZero];
+    [riVc.view setBackgroundColor:UIColor.redColor];
+    [self.categoryView addCategory:@"右边" withViewController:riVc color:UIColor.redColor];
+    
 }
+
+
 
 @end
